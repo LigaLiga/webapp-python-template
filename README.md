@@ -17,3 +17,6 @@ Qualsiasi cosa tu voglia creare, puoi usare questo template!
 Il tutorial che abbiamo usato anche in classe lo trovate [qui](https://wbigger.github.io/book-cs-3y/).
 
 Buon divertimento :)
+
+### Storia utente
+Fare un app che mi mostri le app più usate da me(ad es. play store,aptoide)
