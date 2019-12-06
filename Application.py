@@ -7,8 +7,8 @@ class Application:
 
 applications = []
 
-play_store = Applications("Play_Store","negozio app 1")
-aptoide = Applications("Aptoide","negozio app 2")
+play_store = Application("Play_Store","negozio app 1")
+aptoide = Application("Aptoide","negozio app 2")
 
 
 

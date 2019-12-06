@@ -1,10 +1,10 @@
 from flask import Flask, Response
 import json
 
-from Applicaton import applications
+from Application import applications
 
 
-app = Flask(__name__)
+app = Flask("Application")
 
 @app.route('/')
 def root():
@@ -16,5 +16,5 @@ def js():
 
 @app.route("/data")
 def data():
-    json_string = json.dumps([applicaton.__dict__ for application in applications])
+    json_string = json.dumps([application.__dict__ for application in applications])
     return Response(json_string, mimetype='application/json')
