@@ -5,10 +5,14 @@ class Application:
         self.tipology = tipology
 
 
-applications = []
+
 
 play_store = Application("Play_Store","negozio app 1")
 aptoide = Application("Aptoide","negozio app 2")
+
+applications = [play_store,aptoide]
+
+
 
 
 

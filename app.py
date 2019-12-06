@@ -4,7 +4,7 @@ import json
 from Application import applications
 
 
-app = Flask("Application")
+app = Flask(__name__)
 
 @app.route('/')
 def root():

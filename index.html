@@ -12,12 +12,11 @@
 </body>
 <script src="jquery-3.4.1.min.js"></script>
 <script>
-    // Prende i dati come JSON dall'URL
-    // quando ha finito di prendere i dati, chiama la funzione "makeList"
-    $.getJSON("http://http://127.0.0.1:5500//").done(makeList);
-    function makeList(jsonapplications) {
-    for (Application of jsonapplications) {
-        let newItem = `<li>${Application}</li>`;
+    
+    $.getJSON("http://http://127.0.0.1:5000/data/").done(makeList);
+    function makeList(jsonapplication) {
+    for (applications of jsonapplication) {
+        let newItem = `<li>${applications.application_name}</li>`;
         $("ul").append(newItem);
     }
 }
