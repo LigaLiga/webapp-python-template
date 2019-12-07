@@ -13,10 +13,10 @@
 <script src="jquery-3.4.1.min.js"></script>
 <script>
     
-    $.getJSON("http://127.0.0.1:5000/data").done(makeList);
+    $.getJSON("/data").done(makeList);
     function makeList(jsonapplication) {
     for (applications of jsonapplication) {
-        let newItem = `<li>${applications.application_name}</li>`;
+        let newItem = `<li>${applications.app_name}</li>`;
         $("ul").append(newItem);
     }
 }
