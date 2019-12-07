@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DenEdo Store</title>
+</head>
+<body>
+    <ul>
+    </ul>    
+</body>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+    
+    $.getJSON("http://127.0.0.1:5000/data").done(makeList);
+    function makeList(jsonapplication) {
+    for (applications of jsonapplication) {
+        let newItem = `<li>${applications.application_name}</li>`;
+        $("ul").append(newItem);
+    }
+}
+</script>
+</html>
